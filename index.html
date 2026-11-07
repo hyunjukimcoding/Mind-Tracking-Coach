@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>마인드 트래킹 코치 | 청년을 위한 맞춤형 멘탈 케어</title>
+  <meta name="description" content="정신건강간호사가 함께하는 청년 맞춤형 온·오프라인 멘탈 케어 가이드. 학업과 취업의 무게를 덜어내는 마인드 트래킹 솔루션." />
+  <meta property="og:title" content="마인드 트래킹 코치 | 청년을 위한 맞춤형 멘탈 케어" />
+  <meta property="og:description" content="정신건강간호사가 함께하는 청년 맞춤형 온·오프라인 멘탈 케어 가이드. 학업과 취업의 무게를 덜어내는 마인드 트래킹 솔루션." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Pretendard', 'Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+            mono: ['"Plus Jakarta Sans"', 'ui-monospace', 'monospace'],
+          },
+          colors: {
+            brand: {
+              dark: '#0A1120',
+              deep: '#0F1B33',
+              card: '#0C1527',
+              accent: '#2DD4BF',
+              cyan: '#38BDF8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Pretendard', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0A1120;
+      color: #F1F5F9;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A1120;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spinSlow 24s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#0A1120] text-slate-100 antialiased selection:bg-teal-400 selection:text-slate-950">
+
+  <!-- ============================================================ -->
+  <!-- 0. TOP NAVIGATION BAR (Top Bar Contract: 3-Zone Clean Header) -->
+  <!-- ============================================================ -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-b from-black/70 via-black/30 to-transparent py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-8">
+      
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#" class="flex items-center gap-2 text-white font-extrabold tracking-widest text-lg sm:text-xl uppercase whitespace-nowrap shrink-0 hover:text-teal-400 transition-colors">
+        <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span>
+        <span>MIND TRACKING</span>
+        <span class="text-xs text-teal-400 font-medium tracking-normal hidden sm:inline ml-1">COACH</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wider text-slate-300">
+        <a href="#about" class="hover:text-teal-300 transition-colors py-1 relative group whitespace-nowrap">
+          <span>ABOUT</span>
+          <span class="text-[10px] text-slate-400 ml-1 opacity-80 font-normal">(소개)</span>
+        </a>
+        <a href="#process" class="hover:text-teal-300 transition-colors py-1 relative group whitespace-nowrap">
+          <span>PROCESS</span>
+          <span class="text-[10px] text-slate-400 ml-1 opacity-80 font-normal">(프로세스)</span>
+        </a>
+        <a href="#benefits" class="hover:text-teal-300 transition-colors py-1 relative group whitespace-nowrap">
+          <span>BENEFITS</span>
+          <span class="text-[10px] text-slate-400 ml-1 opacity-80 font-normal">(핵심혜택)</span>
+        </a>
+        <a href="#trust" class="hover:text-teal-300 transition-colors py-1 relative group whitespace-nowrap">
+          <span>TRUST</span>
+          <span class="text-[10px] text-slate-400 ml-1 opacity-80 font-normal">(신뢰·검증)</span>
+        </a>
+        <a href="#pricing" class="hover:text-teal-300 transition-colors py-1 relative group whitespace-nowrap">
+          <span>PRICING</span>
+          <span class="text-[10px] text-slate-400 ml-1 opacity-80 font-normal">(가격혜택)</span>
+        </a>
+      </nav>
+
+      <!-- Zone 3: Action Buttons & Region Marker -->
+      <div class="flex items-center gap-3 shrink-0">
+        <div class="hidden lg:flex items-center text-xs text-slate-400 border border-slate-700/80 rounded px-2.5 py-1">
+          <span class="text-teal-400 font-bold mr-1">KOR</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-slate-300 ml-1">대전 거점</span>
+        </div>
+
+        <button onclick="openReservationModal()" class="px-4 py-2 text-xs font-semibold text-slate-900 bg-teal-400 hover:bg-teal-300 rounded-md transition-all shadow-sm hover:shadow-teal-500/20 whitespace-nowrap flex items-center gap-1.5 cursor-pointer">
+          <span>사전 예약</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-1" aria-label="메뉴 열기">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0B1324] border-b border-slate-800 px-6 py-5 space-y-4 shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        <a href="#about" onclick="toggleMobileMenu()" class="text-sm font-medium text-slate-200 hover:text-teal-400 py-1 flex items-center justify-between border-b border-slate-800/60 pb-2">
+          <span>ABOUT</span><span class="text-xs text-slate-400">서비스 소개</span>
+        </a>
+        <a href="#process" onclick="toggleMobileMenu()" class="text-sm font-medium text-slate-200 hover:text-teal-400 py-1 flex items-center justify-between border-b border-slate-800/60 pb-2">
+          <span>PROCESS</span><span class="text-xs text-slate-400">4단계 프로세스</span>
+        </a>
+        <a href="#benefits" onclick="toggleMobileMenu()" class="text-sm font-medium text-slate-200 hover:text-teal-400 py-1 flex items-center justify-between border-b border-slate-800/60 pb-2">
+          <span>BENEFITS</span><span class="text-xs text-slate-400">핵심 혜택</span>
+        </a>
+        <a href="#trust" onclick="toggleMobileMenu()" class="text-sm font-medium text-slate-200 hover:text-teal-400 py-1 flex items-center justify-between border-b border-slate-800/60 pb-2">
+          <span>TRUST</span><span class="text-xs text-slate-400">신뢰 및 파트너십</span>
+        </a>
+        <a href="#pricing" onclick="toggleMobileMenu()" class="text-sm font-medium text-slate-200 hover:text-teal-400 py-1 flex items-center justify-between border-b border-slate-800/60 pb-2">
+          <span>PRICING</span><span class="text-xs text-slate-400">얼리버드 가격</span>
+        </a>
+      </div>
+      <div class="pt-2">
+        <button onclick="toggleMobileMenu(); openReservationModal();" class="w-full py-2.5 text-center text-xs font-bold text-slate-950 bg-teal-400 hover:bg-teal-300 rounded-md transition">
+          초기 테스터 특별 혜택 신청
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- 1. HERO SECTION (Benchmark: Immersive Tranquil Water & Editorial Typography) -->
+  <!-- ============================================================ -->
+  <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#0A1120]">
+    <!-- Background Image with Scrim -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/assets/images/hero_mind_calm_1794011948089.jpg"
+        alt="Tranquil deep blue waters representing calm mind"
+        class="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0A1120] via-[#0A1120]/45 to-black/60"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 text-left md:text-center">
+      <!-- Category Kicker -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-slate-700/60 text-xs text-teal-300 font-medium mb-8">
+        <svg class="w-3.5 h-3.5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+        </svg>
+        <span>청년 맞춤형 온·오프라인 멘탈 케어 솔루션</span>
+        <span class="text-slate-500">·</span>
+        <span class="text-slate-300 font-normal">정신건강간호사 김현주</span>
+      </div>
+
+      <!-- English Subheading -->
+      <p class="text-sm sm:text-base font-semibold tracking-[0.25em] text-teal-400/90 uppercase mb-3">
+        Deep Calm For Your Overloaded Mind
+      </p>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.2] mb-6">
+        학업과 취업의 무거운 마음,<br />
+        <span class="bg-gradient-to-r from-teal-300 via-cyan-200 to-indigo-300 bg-clip-text text-transparent">
+          마인드 트래킹
+        </span>으로 덜어내세요.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal mb-10">
+        1020 세대를 위한 디지털 기반 맞춤형 멘탈 케어 가이드.<br class="hidden sm:inline" />
+        혼자 끙끙 앓던 감정을 객관적으로 기록하고, 정신건강간호사의 전문적인 지지와 회복 피드백을 만나보세요.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 max-w-md mx-auto">
+        <button
+          onclick="openReservationModal()"
+          class="px-7 py-3.5 bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold text-sm rounded-lg transition-all shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <span>초기 테스터 특별 혜택 받기</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+
+        <a
+          href="#about"
+          class="px-6 py-3.5 border border-slate-400/30 hover:border-teal-400/70 text-slate-200 hover:text-white font-medium text-sm rounded-lg backdrop-blur-sm bg-slate-900/30 hover:bg-slate-900/50 transition-all flex items-center justify-center gap-2"
+        >
+          <span>솔루션 살펴보기</span>
+          <span class="text-xs text-teal-400">Read more →</span>
+        </a>
+      </div>
+
+      <!-- Trust Strip -->
+      <div class="mt-14 pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-2xl mx-auto text-left sm:text-center">
+        <div>
+          <div class="text-xl sm:text-2xl font-bold text-white tracking-tight font-mono">1:1</div>
+          <div class="text-xs text-slate-400 mt-0.5">정신건강간호사 전담 코칭</div>
+        </div>
+        <div>
+          <div class="text-xl sm:text-2xl font-bold text-teal-400 tracking-tight font-mono">WEEKLY</div>
+          <div class="text-xs text-slate-400 mt-0.5">AI 분석 감정 리포트</div>
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <div class="text-xl sm:text-2xl font-bold text-cyan-300 tracking-tight font-mono">ON·OFF</div>
+          <div class="text-xs text-slate-400 mt-0.5">대전 거점 커뮤니티 연계</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Indicator Strip -->
+    <div class="absolute bottom-6 left-6 right-6 hidden md:flex items-center justify-between text-xs text-slate-400 z-10 max-w-7xl mx-auto">
+      <div class="flex items-center gap-2">
+        <span class="font-mono text-teal-400 font-bold">01</span>
+        <span class="w-10 h-[1px] bg-teal-400/50"></span>
+        <span class="font-mono text-slate-500">02</span>
+        <span class="text-[11px] text-slate-400 ml-2">MIND TRACKING JOURNEY</span>
+      </div>
+
+      <a href="#problem" class="flex items-center gap-1.5 text-slate-400 hover:text-teal-300 transition-colors">
+        <span>SCROLL DOWN</span>
+        <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 2. PROBLEM DEFINITION SECTION -->
+  <!-- ============================================================ -->
+  <section id="problem" class="py-24 px-4 sm:px-6 lg:px-8 bg-[#0D1629] border-t border-slate-800/80">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase">
+          PROBLEM IDENTIFICATION
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3 mb-6 tracking-tight">
+          혼자 견디기 벅찬 스트레스,<br />
+          털어놓을 곳이 없지 않았나요?
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          치열한 학업 경쟁과 끝이 보이지 않는 취업 준비.<br class="hidden sm:inline" />
+          마음이 지쳐 쓰러질 것 같은 순간에도 전문가의 도움을 받기엔 비용과 시선의 장벽이 너무 높았습니다.
+        </p>
+      </div>
+
+      <!-- Empathy Quote Box -->
+      <div class="relative bg-slate-900/80 border border-teal-500/30 rounded-2xl p-8 sm:p-10 mb-16 shadow-2xl backdrop-blur-sm max-w-3xl mx-auto">
+        <div class="absolute -top-3.5 left-8 px-3 py-0.5 bg-teal-500 text-slate-950 font-bold text-[11px] rounded tracking-wide">
+          취업 준비생의 실제 고민
+        </div>
+        <blockquote class="text-lg sm:text-xl font-medium text-slate-100 leading-relaxed italic mb-4">
+          “아무도 내 마음을 모르는 것 같고, 병원이나 상담센터에 정식으로 찾아가기엔 비용도 시선도 너무 부담스러워요. 혼자 삼키다 보니 작은 일에도 쉽게 무너집니다.”
+        </blockquote>
+        <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800">
+          <span>20대 취업준비생 심층 인터뷰 중</span>
+          <span class="text-teal-400 font-mono">대전 거점 청년 포커스 그룹</span>
+        </div>
+      </div>
+
+      <!-- 3 Barrier Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-10 h-10 rounded-lg bg-teal-950 border border-teal-800/60 flex items-center justify-center text-teal-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/>
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">사회적 시선의 부담</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            정신과나 상담센터 방문에 대한 주위의 편견과 진료 기록에 대한 막연한 두려움으로 조기 개입 골든타임을 놓치기 쉽습니다.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-800/60 flex items-center justify-center text-indigo-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">높은 비용의 장벽</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            회당 8~15만 원에 달하는 1회성 상담 비용은 소득이 불규칙한 청년에게 지속적인 멘탈 케어를 포기하게 만드는 큰 원인입니다.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+          <div class="w-10 h-10 rounded-lg bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">일상 지속성의 부재</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            한 달에 한 번 상담실을 찾는 것만으로는 매일 밤 침대에서 밀려오는 불안과 시험/면접 직전의 감정 요동을 다스릴 수 없습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. ABOUT SECTION (Benchmark: Portrait + Rotating Circular SVG Badge) -->
+  <!-- ============================================================ -->
+  <section id="about" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#0F1B33] relative overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Portrait with Rotating Circular Text Stamp -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-900 group">
+              <img
+                src="/assets/images/about_coach_care_1794011949360.jpg"
+                alt="Mental health nurse Kim Hyun-joo coach in warm consultation space"
+                class="w-full h-[450px] object-cover object-top filter brightness-[0.95] group-hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0F1B33] via-transparent to-transparent opacity-60"></div>
+
+              <!-- Coach Badge Inside Photo -->
+              <div class="absolute bottom-4 left-4 right-4 p-3 rounded-lg bg-slate-900/85 backdrop-blur-md border border-slate-700/70 text-xs">
+                <div class="font-bold text-white flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>정신건강간호사 2급 김현주</span>
+                </div>
+                <div class="text-[11px] text-slate-300 mt-0.5">
+                  임상 감정 분석 & 갈등 조정 전문 마인드 코치
+                </div>
+              </div>
+            </div>
+
+            <!-- Rotating Circular Stamp on Corner -->
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 hidden sm:flex items-center justify-center pointer-events-none">
+              <div class="w-full h-full relative animate-spin-slow">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                  <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+                  <text class="text-[9.5px] font-semibold tracking-[0.14em] fill-teal-300/80 uppercase">
+                    <textPath href="#circlePath" startOffset="0%">
+                      MIND TRACKING COACH · MENTAL CARE ·
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div class="absolute w-10 h-10 rounded-full bg-slate-900 border border-teal-500/40 flex items-center justify-center text-teal-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: ABOUT Narrative -->
+        <div class="lg:col-span-7">
+          <div class="inline-block text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase mb-2">
+            MIND TRACKING COACH
+          </div>
+          
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase mb-6">
+            ABOUT
+          </h2>
+
+          <p class="text-lg sm:text-xl font-bold text-slate-100 mb-6 leading-snug">
+            정신건강간호사가 온·오프라인으로 청년의 곁에 함께합니다.
+          </p>
+
+          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+            <p>
+              <strong class="text-white font-semibold">정신건강간호사 2급 김현주 코치</strong>의 다년간의 임상 경험을 바탕으로, 단순한 일회성 위로를 넘어선 체계적인 감정 분석과 갈등 조정 코칭을 제공합니다.
+            </p>
+            <p>
+              혼자 감내하기 힘든 학업 스트레스와 취업의 불안을 데이터 기반으로 명확히 인식하고 객관적으로 다룰 수 있도록 돕습니다.
+            </p>
+            <p>
+              특히 <strong class="text-teal-300 font-semibold">대전 내 신규 아파트 커뮤니티 및 새롭게 개소한 지역 정신상담센터</strong>와 연계하여, 여러분의 일상 속 가장 편안하고 안전한 거점에서 맞춤형 심리 지지를 실천합니다.
+            </p>
+          </div>
+
+          <!-- 2 Key Pillar Boxes -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+              <div class="flex items-center gap-2 text-teal-300 text-sm font-bold mb-1">
+                <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                </svg>
+                <span>전문적인 공감과 코칭</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                임상 기반의 검증된 감정 평가 매뉴얼과 공감적 갈등 조율 솔루션
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+              <div class="flex items-center gap-2 text-indigo-300 text-sm font-bold mb-1">
+                <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span>가장 가까운 곳에서의 지지</span>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                대전 지역 아파트 커뮤니티 및 로컬 상담 거점을 통한 친근한 오프라인 연결
+              </p>
+            </div>
+          </div>
+
+          <!-- Read More Button -->
+          <button
+            onclick="openCoachModal()"
+            class="inline-flex items-center gap-2 px-6 py-3 border border-slate-400/40 hover:border-teal-400 text-white text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-slate-800/80 transition-all group cursor-pointer"
+          >
+            <span>코치 소개 & 전문 자격 상세</span>
+            <span class="text-teal-400 transition-transform group-hover:translate-x-1">Read more →</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. PROCESS SECTION (Benchmark: Horizontal Timeline + 4 Cards) -->
+  <!-- ============================================================ -->
+  <section id="process" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#0C1527] border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-left mb-16">
+        <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase">
+          MIND TRACKING
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 tracking-tight uppercase">
+          PROCESS
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+          우리는 청년의 지속 가능한 마음 회복을 위해 하나의 체계적인 온·오프라인 선순환 구조를 구축합니다.
+        </p>
+      </div>
+
+      <!-- Stepper Connecting Line (Desktop) -->
+      <div class="relative mb-10 hidden md:block">
+        <div class="absolute top-1/2 left-0 right-0 h-[1px] bg-slate-700/80 -translate-y-1/2 z-0"></div>
+        <div class="relative z-10 grid grid-cols-4 gap-4">
+          <button onclick="setProcessStep(0)" id="dot-0" class="flex items-center gap-3 text-left focus:outline-none group cursor-pointer">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center border-2 bg-teal-400 border-white shadow-lg shadow-teal-500/50 scale-125 transition-all">
+              <span class="w-2 h-2 rounded-full bg-slate-950"></span>
+            </div>
+            <span class="text-xs font-mono font-semibold text-teal-300">01</span>
+          </button>
+
+          <button onclick="setProcessStep(1)" id="dot-1" class="flex items-center gap-3 text-left focus:outline-none group cursor-pointer">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center border-2 bg-slate-900 border-slate-600 group-hover:border-teal-400 transition-all">
+              <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+            </div>
+            <span class="text-xs font-mono font-semibold text-slate-500 group-hover:text-slate-300">02</span>
+          </button>
+
+          <button onclick="setProcessStep(2)" id="dot-2" class="flex items-center gap-3 text-left focus:outline-none group cursor-pointer">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center border-2 bg-slate-900 border-slate-600 group-hover:border-teal-400 transition-all">
+              <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+            </div>
+            <span class="text-xs font-mono font-semibold text-slate-500 group-hover:text-slate-300">03</span>
+          </button>
+
+          <button onclick="setProcessStep(3)" id="dot-3" class="flex items-center gap-3 text-left focus:outline-none group cursor-pointer">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center border-2 bg-slate-900 border-slate-600 group-hover:border-teal-400 transition-all">
+              <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+            </div>
+            <span class="text-xs font-mono font-semibold text-slate-500 group-hover:text-slate-300">04</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+        <!-- Card 0 (Active initially) -->
+        <div id="step-card-0" onclick="setProcessStep(0)" class="p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-100 text-slate-900 border-white shadow-2xl scale-[1.02] ring-2 ring-teal-400/40">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-slate-600">STEP 01</span>
+              <span class="w-2 h-2 rounded-full bg-teal-600"></span>
+            </div>
+            <h3 class="text-lg font-bold mb-1 tracking-tight leading-snug text-slate-950">스마트 감정 기록</h3>
+            <div class="text-[11px] font-mono mb-3 text-slate-600">Digital Mind Logging</div>
+            <p class="text-xs leading-relaxed text-slate-700">AI 챗봇과 전용 앱으로 일상 스트레스 지수와 감정 데이터를 간편히 수집합니다.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-current/10">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-200/80 text-slate-900">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="text-[11px] font-bold text-slate-900 flex items-center gap-1">진행 중 →</span>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div id="step-card-1" onclick="setProcessStep(1)" class="p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-900/60 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-slate-500">STEP 02</span>
+              <span class="w-2 h-2 rounded-full bg-slate-700"></span>
+            </div>
+            <h3 class="text-lg font-bold mb-1 tracking-tight leading-snug text-white">임상 패턴 분석</h3>
+            <div class="text-[11px] font-mono mb-3 text-teal-400/80">Clinical Pattern Analysis</div>
+            <p class="text-xs leading-relaxed text-slate-400">정신건강간호사의 전문 임상 매뉴얼과 AI가 결합하여 심층 원인을 파악합니다.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-current/10">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-800/80 text-teal-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1">자세히 →</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="step-card-2" onclick="setProcessStep(2)" class="p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-900/60 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-slate-500">STEP 03</span>
+              <span class="w-2 h-2 rounded-full bg-slate-700"></span>
+            </div>
+            <h3 class="text-lg font-bold mb-1 tracking-tight leading-snug text-white">프라이빗 1:1 피드백</h3>
+            <div class="text-[11px] font-mono mb-3 text-teal-400/80">Private 1:1 Feedback</div>
+            <p class="text-xs leading-relaxed text-slate-400">매주 나만의 감정 리포트와 김현주 코치의 맞춤형 회복 솔루션을 받습니다.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-current/10">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-800/80 text-teal-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1">자세히 →</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div id="step-card-3" onclick="setProcessStep(3)" class="p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-900/60 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-slate-500">STEP 04</span>
+              <span class="w-2 h-2 rounded-full bg-slate-700"></span>
+            </div>
+            <h3 class="text-lg font-bold mb-1 tracking-tight leading-snug text-white">오프라인 심층 케어</h3>
+            <div class="text-[11px] font-mono mb-3 text-teal-400/80">Offline Deep Care</div>
+            <p class="text-xs leading-relaxed text-slate-400">월 1회 대전 지역 거점 커뮤니티에서 대면하여 더 깊은 심리적 지지를 받습니다.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 mt-4 border-t border-current/10">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-800/80 text-teal-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1">자세히 →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Step Detail Card -->
+      <div class="p-8 rounded-2xl bg-gradient-to-r from-slate-900/90 to-slate-950/90 border border-slate-700/80 backdrop-blur-md">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-8">
+            <div id="detail-tag" class="flex items-center gap-2 text-xs font-mono text-teal-400 mb-2">
+              <span>STEP 01</span>
+              <span>·</span>
+              <span>Digital Mind Logging</span>
+            </div>
+            <h4 id="detail-title" class="text-xl sm:text-2xl font-bold text-white mb-3">
+              스마트한 일상 감정 기록 상세 프로세스
+            </h4>
+            <p id="detail-desc" class="text-slate-300 text-sm leading-relaxed mb-6">
+              학업, 취업 준비, 대인관계 등 매일 마주하는 감정의 기복을 부담 없이 1분 만에 체크인합니다. 직관적인 감정 태깅과 음성/텍스트 메모를 통해 솔직한 마음 상태를 축적합니다.
+            </p>
+            <div id="detail-features" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>1일 1회 간편 감정 체크인</span>
+              </div>
+              <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>실시간 스트레스 지수 시각화</span>
+              </div>
+              <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>기분 요인(트리거) 자동 분류</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6 text-xs text-slate-400 space-y-2">
+            <div class="font-semibold text-slate-200">전담 코치 검토 보장</div>
+            <p>
+              정신건강간호사 2급 김현주 코치가 매주 제출되는 모든 감정 데이터와 리포트를 100% 직접 확인하고 개별 피드백을 작성합니다.
+            </p>
+            <div class="pt-2 text-teal-300 font-mono text-[11px]">
+              🔒 개인정보 및 민감 심리 데이터 완벽 암호화
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 5. CORE BENEFITS SECTION (Benchmark: Product 2-Column Showcase) -->
+  <!-- ============================================================ -->
+  <section id="benefits" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#101C36] relative overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="mb-14">
+        <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase">
+          MIND TRACKING COACH
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase mt-2">
+          CORE BENEFITS
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+          1020 청년이 스스로 감정을 다스릴 수 있도록 돕는 마인드 트래킹의 3가지 핵심 혜택
+        </p>
+
+        <!-- Benefit Tabs -->
+        <div class="flex flex-wrap items-center gap-2 mt-6 p-1.5 bg-slate-900/80 rounded-xl border border-slate-800 w-fit">
+          <button id="btab-0" onclick="setBenefitTab(0)" class="px-4 py-2 text-xs font-bold rounded-lg transition-all bg-teal-400 text-slate-950 shadow-md">
+            01. 스마트한 감정 기록
+          </button>
+          <button id="btab-1" onclick="setBenefitTab(1)" class="px-4 py-2 text-xs font-bold rounded-lg transition-all text-slate-400 hover:text-white hover:bg-slate-800/60">
+            02. 프라이빗 1:1 피드백
+          </button>
+          <button id="btab-2" onclick="setBenefitTab(2)" class="px-4 py-2 text-xs font-bold rounded-lg transition-all text-slate-400 hover:text-white hover:bg-slate-800/60">
+            03. 오프라인 심층 케어
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left: Benefit Narrative -->
+        <div class="lg:col-span-5">
+          <div id="b-kicker" class="text-xs font-mono text-teal-400 font-bold mb-2">
+            BENEFIT 01 · SMART LOGGING
+          </div>
+          <h3 id="b-title" class="text-2xl sm:text-3xl font-extrabold text-white mb-2 tracking-tight">
+            스마트한 감정 기록
+          </h3>
+          <p id="b-subhead" class="text-teal-300/90 text-sm font-semibold mb-6">
+            AI 챗봇과 앱을 통한 일상 스트레스 데이터화
+          </p>
+          <p id="b-desc" class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+            멘탈 케어 전용 앱과 직관적인 챗봇을 활용하여 일상 속 스트레스 지수와 감정 데이터를 손쉽게 수집하고 시각화합니다. 머릿속에 엉켜있던 모호한 불안을 명확한 데이터로 마주할 수 있습니다.
+          </p>
+
+          <div id="b-highlights" class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+              <svg class="w-4 h-4 text-teal-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>복잡한 글쓰기 없이 터치 3번으로 끝나는 감정 로깅</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+              <svg class="w-4 h-4 text-teal-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>시험·과제·취업 시즌별 스트레스 스파이크 실시간 알림</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+              <svg class="w-4 h-4 text-teal-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>나만의 심리 안정 트리거 및 수면/식사 상관관계 도출</span>
+            </div>
+          </div>
+
+          <button
+            onclick="openReservationModal()"
+            class="inline-flex items-center gap-2 px-6 py-3 border border-slate-400/40 hover:border-teal-400 text-white text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-slate-800/80 transition-all group cursor-pointer"
+          >
+            <span>혜택 신청하기</span>
+            <span class="text-teal-400 transition-transform group-hover:translate-x-1">Read more →</span>
+          </button>
+        </div>
+
+        <!-- Right: Image Media & Live Report Sample -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl group bg-slate-900">
+            <img
+              src="/assets/images/feature_digital_tracker_1794011950226.jpg"
+              alt="Mind tracking smartphone application and journal on wooden desk"
+              class="w-full h-[320px] sm:h-[360px] object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B1324] via-transparent to-transparent opacity-80"></div>
+            
+            <div class="absolute top-4 right-4 px-3 py-1 bg-slate-900/80 backdrop-blur-md rounded-full border border-teal-500/40 text-[11px] text-teal-300 font-mono flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+              <span>Live App Demo Preview</span>
+            </div>
+
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/85 backdrop-blur-md border border-slate-800 flex items-center justify-between text-xs">
+              <div>
+                <div class="font-bold text-white">마인드 트래킹 전용 디지털 케어 킷</div>
+                <div class="text-slate-400 text-[11px]">일일 감정 로그 + 주간 심리 상태 시각화 엔진</div>
+              </div>
+              <span class="text-teal-400 font-mono font-bold text-[11px]">v2.4 READY</span>
+            </div>
+          </div>
+
+          <!-- Weekly Report Mockup -->
+          <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md shadow-xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+                <span class="text-xs font-bold text-white">실제 발송되는 [주간 감정 분석 리포트] 예시</span>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400">발행: 정신건강간호사 김현주</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+              <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">주간 안정 지수</div>
+                <div class="text-xl font-mono font-bold text-teal-400 mt-1">78 / 100</div>
+                <div class="text-[10px] text-teal-300/80 mt-0.5">+14점 상승</div>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">불안 및 긴장도</div>
+                <div class="text-xl font-mono font-bold text-cyan-300 mt-1">22%</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">전주 대비 26%p 감소</div>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 text-center">
+                <div class="text-[11px] text-slate-400">주요 긍정 감정</div>
+                <div class="text-sm font-bold text-white mt-1">안도감 · 성취</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">루틴 회복 중</div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-lg bg-teal-950/30 border border-teal-800/40 text-xs text-slate-200">
+              <span class="font-bold text-teal-400 mr-1.5">코치 김현주의 한마디:</span>
+              "이번 주는 면접 준비로 수요일에 일시적 긴장도가 높았으나, 목요일 저녁 산책과 감정 메모를 통해 빠르게 평정심을 되찾으셨네요. 아주 훌륭한 회복 탄력성입니다."
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. TRUST & REGIONAL PARTNERSHIPS SECTION -->
+  <!-- ============================================================ -->
+  <section id="trust" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#0C1527] border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase">
+          TRUST & REGIONAL PARTNERSHIP
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-6 tracking-tight">
+          믿고 기댈 수 있는 든든한 지역 파트너십
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          대학 창업지원단 및 지역 청년센터와의 긴밀한 협력을 통해,<br class="hidden sm:inline" />
+          청년 로컬 크리에이터의 든든한 정착 기반이자 공인된 전문 서비스를 만들어갑니다.
+        </p>
+      </div>
+
+      <!-- MVP Banner -->
+      <div class="mb-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900/90 to-[#0f243b] border border-teal-500/30 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-teal-500/20 text-teal-300 text-xs font-bold">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+              <span>진행 중인 MVP (시범 운영) 프로젝트</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white">
+              대전 번화가 인근 점포 3곳 거점 1020 타겟 시범 캠페인
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
+              접근성이 높은 대전 번화가 점포 3곳과 연계하여 1020 청년 타겟 <strong class="text-teal-300 font-semibold">'마인드 트래킹 카드뉴스 &amp; 숏폼'</strong> 심리 캠페인을 활발히 진행 중입니다. 일상 속에서 편안하게 마음 건강을 점검하세요.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0">
+            <div class="px-4 py-2 rounded-lg bg-slate-950/70 border border-slate-800 text-center text-xs">
+              <span class="text-slate-400 block text-[10px]">시범 운영 거점</span>
+              <span class="text-teal-400 font-bold font-mono">대전 둔산·궁동·대흥동</span>
+            </div>
+            <div class="px-4 py-2 rounded-lg bg-slate-950/70 border border-slate-800 text-center text-xs">
+              <span class="text-slate-400 block text-[10px]">시범 참여 만족도</span>
+              <span class="text-teal-400 font-bold font-mono">98.4% (N=142)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust 3 Badges -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 text-left">
+          <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-teal-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h4 class="text-sm font-bold text-white mb-1">대학 창업지원단 연계</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            창직 혁신 프로젝트 선정 및 청년 멘탈 헬스케어 연구 지원 인프라 확보
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 text-left">
+          <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h4 class="text-sm font-bold text-white mb-1">지역 청년센터 협력</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            대전 지역 청년 정책 및 정서 지원 프로그램과의 온·오프라인 파트너십
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 text-left">
+          <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-indigo-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h4 class="text-sm font-bold text-white mb-1">정신건강간호사 전문 자격</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            보건복지부 공인 정신건강간호사 2급 자격 및 임상 경력 기반 검증
+          </p>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="space-y-4">
+        <div class="text-left">
+          <h3 class="text-xl font-bold text-white">참여 청년 테스터의 생생한 목소리</h3>
+          <p class="text-xs text-slate-400">마인드 트래킹 코칭을 먼저 경험한 청년들의 변화</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-4">
+              "서류 탈락이 이어질 때마다 자책감에 잠을 못 잤는데, 매일 마인드 트래킹을 하며 내 감정을 분리해 볼 수 있게 되었습니다. 현주 코치님의 따뜻한 리포트 피드백이 다시 일어설 수 있는 버팀목이 되었습니다."
+            </p>
+            <div class="pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-bold text-white">이○○ (25세)</div>
+              <div class="text-[11px] text-slate-400">취업준비생 · 6개월간 취준 병행</div>
+              <div class="mt-2 text-[11px] font-mono text-teal-400 font-semibold">불안 지수 64% → 28% 감소</div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-4">
+              "상담실 문을 두드리는 게 무서웠는데, 앱으로 감정을 기록하고 대전 거점 커뮤니티에서 편안하게 코치님을 뵈니 전혀 부담스럽지 않았어요. 병원에 가지 않고도 전문가의 케어를 받는 느낌입니다."
+            </p>
+            <div class="pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-bold text-white">박○○ (22세)</div>
+              <div class="text-[11px] text-slate-400">충남대 재학생 · 진로 고민</div>
+              <div class="mt-2 text-[11px] font-mono text-teal-400 font-semibold">학업 번아웃 극복 및 루틴 회복</div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between">
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-4">
+              "첫 직장 생활에서 오는 관계 갈등으로 퇴사까지 고민했습니다. 정신건강간호사님의 갈등 조정 프레임워크 덕분에 감정적으로 대응하지 않고 건강하게 소통하는 법을 배웠습니다."
+            </p>
+            <div class="pt-4 border-t border-slate-800/80">
+              <div class="text-xs font-bold text-white">정○○ (27세)</div>
+              <div class="text-[11px] text-slate-400">사회초년생 · 직장 내 갈등</div>
+              <div class="mt-2 text-[11px] font-mono text-teal-400 font-semibold">직무 스트레스 점수 45% 완화</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 7. PRICING & SPECIAL OFFER SECTION -->
+  <!-- ============================================================ -->
+  <section id="pricing" class="py-28 px-4 sm:px-6 lg:px-8 bg-[#0D1629] border-t border-slate-800/80">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase">
+        PRICING &amp; SPECIAL OFFER
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 tracking-tight">
+        시작을 망설이는 당신을 위한 특별한 제안
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base mb-12 max-w-xl mx-auto">
+        오픈 초기 한정 혜택으로 비용 부담 없이 체계적인 멘탈 케어를 시작해보세요.
+      </p>
+
+      <div class="relative max-w-lg mx-auto bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 p-8 sm:p-10 rounded-3xl border-2 border-teal-400/80 shadow-2xl shadow-teal-500/10 text-left">
+        <div class="flex items-center justify-between mb-6">
+          <span class="px-3 py-1 bg-teal-400 text-slate-950 text-xs font-extrabold rounded-full uppercase tracking-wider">
+            ★ 베타 테스터 한정 50명
+          </span>
+          <span class="text-xs font-mono text-teal-300">잔여 14석 남음</span>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mb-1">
+          마인드 트래킹 정기 구독권
+        </h3>
+        <p class="text-xs text-slate-400 mb-6">
+          온라인 주간 피드백 리포트 + 월 1회 오프라인 대면 심층 상담
+        </p>
+
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 mb-6 flex items-baseline justify-between">
+          <div>
+            <span class="text-xs text-slate-400 block mb-0.5">얼리버드 50% 특별 지원가</span>
+            <div class="flex items-baseline gap-2">
+              <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono">
+                49,000<span class="text-lg font-normal text-slate-300">원 / 월</span>
+              </span>
+              <span class="text-sm text-slate-500 line-through font-mono">98,000원</span>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-teal-400 bg-teal-950 border border-teal-800/60 px-2.5 py-1 rounded">
+            SAVE 50%
+          </span>
+        </div>
+
+        <div class="space-y-3.5 mb-8 text-xs sm:text-sm text-slate-200">
+          <div class="flex items-start gap-3">
+            <div class="w-5 h-5 rounded-full bg-teal-950 border border-teal-700/60 flex items-center justify-center text-teal-400 shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-white">1:1 전담 마인드 코치 배정</strong>
+              <p class="text-[11px] text-slate-400">정신건강간호사 2급 김현주 코치 100% 직접 배정</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-5 h-5 rounded-full bg-teal-950 border border-teal-700/60 flex items-center justify-center text-teal-400 shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-white">매주 AI 분석 감정 리포트 제공</strong>
+              <p class="text-[11px] text-slate-400">일주일간의 스트레스 추이와 전문 맞춤 처방 코멘트</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-5 h-5 rounded-full bg-teal-950 border border-teal-700/60 flex items-center justify-center text-teal-400 shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-white">거점 커뮤니티 시설 우선 예약권</strong>
+              <p class="text-[11px] text-slate-400">대전 아파트 커뮤니티 &amp; 상담 거점 월 1회 1:1 대면 상담</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-5 h-5 rounded-full bg-teal-950 border border-teal-700/60 flex items-center justify-center text-teal-400 shrink-0 mt-0.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <strong class="text-white">무제한 데일리 감정 로깅 킷</strong>
+              <p class="text-[11px] text-slate-400">전용 모바일 앱 및 챗봇 체크인 무제한 이용</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          onclick="openReservationModal()"
+          class="w-full py-4 bg-teal-400 hover:bg-teal-300 text-slate-950 font-extrabold text-sm rounded-xl transition-all shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2 group cursor-pointer"
+        >
+          <span>선착순 가격으로 얼리버드 확보하기</span>
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+
+        <p class="text-center text-[11px] text-slate-400 mt-3">
+          * 1개월 이용 후 언제든 위약금 없이 해지 가능합니다.
+        </p>
+      </div>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <span>상담 내용 100% 비밀 보장</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>사전 예약 후 순차적 안내</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 8. CLOSING & FINAL CALL TO ACTION SECTION -->
+  <!-- ============================================================ -->
+  <section id="contact" class="relative py-32 px-4 sm:px-6 lg:px-8 bg-[#091122] overflow-hidden">
+    <!-- Cinematic Dawn Image Backdrop -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="/assets/images/closing_tranquil_peace_1794011949361.jpg"
+        alt="Tranquil dawn coastal horizon representing hope and emotional new beginning"
+        class="w-full h-full object-cover object-center filter brightness-[0.65] contrast-[1.05]"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#091122] via-[#091122]/60 to-[#091122]/70"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="text-xs font-mono font-semibold tracking-widest text-teal-400 uppercase inline-block mb-3">
+        MIND TRACKING COACH · CONTACT &amp; RESERVATION
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        더 이상 혼자서 힘들어하지 마세요.
+      </h2>
+
+      <p class="text-base sm:text-xl text-slate-200/90 max-w-2xl mx-auto leading-relaxed font-normal mb-10">
+        당신의 마음이 건강하게 빛날 수 있도록, 현주 코치가 첫걸음을 함께합니다.<br class="hidden sm:inline" />
+        지금 바로 신청하고 초기 테스터 특별 혜택을 놓치지 마세요!
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <button
+          onclick="openReservationModal()"
+          class="w-full sm:w-auto px-10 py-5 bg-white hover:bg-slate-100 text-slate-950 font-extrabold text-base rounded-full shadow-2xl hover:scale-105 transition-all transform flex items-center justify-center gap-2 group cursor-pointer"
+        >
+          <span>초기 테스터 사전 예약하기</span>
+          <span class="text-lg">🚀</span>
+        </button>
+      </div>
+
+      <p class="mt-5 text-xs text-teal-200/80 font-medium">
+        * 50명 선착순 마감 임박 · 대전 거점 커뮤니티 및 비대면 온라인 동시 진행
+      </p>
+
+      <div class="mt-12 pt-8 border-t border-slate-700/50 flex flex-wrap items-center justify-center gap-8 text-xs text-slate-300">
+        <div>
+          <span class="text-slate-400">문의 이메일:</span>
+          <a href="mailto:contact@mindtracking.coach" class="text-teal-300 hover:underline">contact@mindtracking.coach</a>
+        </div>
+        <div>
+          <span class="text-slate-400">카카오톡 채널:</span>
+          <span class="text-teal-300">@마인드트래킹코치</span>
+        </div>
+        <div>
+          <span class="text-slate-400">진행 거점:</span>
+          <span class="text-slate-200">대전광역시 대학 창업지원단 및 지역 청년센터</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 9. FOOTER (Benchmark: Clean Dark Layout with Legal & Socials) -->
+  <!-- ============================================================ -->
+  <footer class="bg-[#070D1B] text-slate-400 text-xs border-t border-slate-800/80 pt-16 pb-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap items-center gap-6 pb-8 border-b border-slate-800/80 text-xs">
+        <a href="#about" class="hover:text-slate-200 transition-colors">서비스 소개</a>
+        <span class="text-slate-700">|</span>
+        <button onclick="openLegalModal('privacy')" class="hover:text-slate-200 transition-colors cursor-pointer">개인정보처리방침</button>
+        <span class="text-slate-700">|</span>
+        <button onclick="openLegalModal('terms')" class="hover:text-slate-200 transition-colors cursor-pointer">이용약관</button>
+        <span class="text-slate-700">|</span>
+        <a href="#problem" class="hover:text-slate-200 transition-colors">청년 멘탈 케어 가이드</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 items-start">
+        <div class="md:col-span-4">
+          <div class="text-white font-extrabold text-lg tracking-widest uppercase mb-2 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+            <span>MIND TRACKING</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm mb-4">
+            정신건강간호사가 함께하는 1020 청년 맞춤형 온·오프라인 멘탈 케어 코칭 서비스. 학업과 취업의 무게를 덜어내는 지속가능한 회복 체계.
+          </p>
+          <div class="inline-flex items-center gap-1.5 text-[11px] text-teal-400/90 font-mono">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>보건복지부 공인 정신건강간호사 2급 코칭</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 space-y-1.5 text-[11px] leading-relaxed text-slate-400">
+          <div class="text-slate-200 font-semibold mb-2 uppercase tracking-wider text-xs">Service Information</div>
+          <div><span class="text-slate-500">브랜드명:</span> 마인드 트래킹 코치 (Mind Tracking Coach)</div>
+          <div><span class="text-slate-500">총괄 코치:</span> 정신건강간호사 김현주 | <span class="text-slate-500">협력:</span> 대전 지역 청년센터 &amp; 대학 창업지원단</div>
+          <div><span class="text-slate-500">오프라인 거점:</span> 대전광역시 신규 아파트 커뮤니티 및 지역 상담센터 거점</div>
+          <div><span class="text-slate-500">문의 이메일:</span> contact@mindtracking.coach | <span class="text-slate-500">운영시간:</span> 평일 10:00 - 18:00</div>
+        </div>
+
+        <div class="md:col-span-3 flex flex-col md:items-end justify-between space-y-4">
+          <div class="flex items-center gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-teal-400 hover:text-slate-950 text-slate-300 flex items-center justify-center transition-colors" aria-label="Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://blog.naver.com" target="_blank" rel="noreferrer" class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-teal-400 hover:text-slate-950 text-slate-300 flex items-center justify-center transition-colors text-xs font-bold" aria-label="Naver Blog">
+              N
+            </a>
+            <a href="https://kakao.com" target="_blank" rel="noreferrer" class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-teal-400 hover:text-slate-950 text-slate-300 flex items-center justify-center transition-colors" aria-label="Kakao Talk">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.708 4.8 4.27 6.053l-1.09 4.032c-.097.359.309.645.607.447l4.783-3.17c.142.011.287.017.43.017 4.97 0 9-3.185 9-7.115S16.97 3 12 3z"/></svg>
+            </a>
+          </div>
+          <div class="text-[11px] text-slate-500 md:text-right">
+            대전 청년 로컬 크리에이터 창직 프로젝트<br />
+            지역사회 밀착형 멘탈 웰니스 플랫폼
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+        <div>Copyright © 2026 Mind Tracking Coach. All rights reserved.</div>
+        <div class="flex items-center gap-2">
+          <span>Designed for Youth Wellness</span>
+          <span>·</span>
+          <span class="text-teal-400">Daejeon, Korea</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MODAL 1: RESERVATION MODAL -->
+  <!-- ============================================================ -->
+  <div id="reservation-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="relative w-full max-w-lg bg-[#0F1B33] border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-100 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeReservationModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-full hover:bg-slate-800 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Form View -->
+      <div id="booking-form-view">
+        <div class="flex items-center gap-2 text-xs font-mono text-teal-400 font-bold mb-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <span>BETA TESTER PRE-RESERVATION</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">
+          초기 테스터 특별 혜택 사전 예약
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed mb-6">
+          정가 대비 50% 특별 할인 및 정신건강간호사 김현주 1:1 전담 코칭 혜택이 적용됩니다. 선착순 50명 마감 시 조기 종료됩니다.
+        </p>
+
+        <form id="reservation-form" onsubmit="handleReservationSubmit(event)" class="space-y-4 text-xs">
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">
+              성함 또는 닉네임 <span class="text-teal-400">*</span>
+            </label>
+            <input
+              type="text"
+              id="res-name"
+              required
+              placeholder="예: 김민지 (익명 닉네임 가능)"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-teal-400"
+            />
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">
+              연락처 (휴대폰 또는 이메일) <span class="text-teal-400">*</span>
+            </label>
+            <input
+              type="text"
+              id="res-contact"
+              required
+              placeholder="예: 010-1234-5678 또는 name@domain.com"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-teal-400"
+            />
+            <span class="text-[10px] text-slate-400 mt-1 block">
+              * 서비스 오픈 및 사전 설문 안내 링크가 발송됩니다.
+            </span>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">현재 상황 / 연령대</label>
+            <select
+              id="res-age"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 focus:outline-none focus:border-teal-400"
+            >
+              <option value="10대 고등학생">10대 고등학생 (학업·입시 스트레스)</option>
+              <option value="20대 대학생">20대 대학생 (학점·진로·인간관계)</option>
+              <option value="20대 취업준비생" selected>20대 취업준비생 (서류·면접·미래 불안)</option>
+              <option value="20대 사회초년생">20대 사회초년생 (직장 적응·갈등)</option>
+              <option value="기타">기타 청년</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-semibold mb-1">가장 덜어내고 싶은 고민</label>
+            <select
+              id="res-concern"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 focus:outline-none focus:border-teal-400"
+            >
+              <option value="취업·진로 불안" selected>취업·진로 불안 (서류 탈락, 미래 불확실성)</option>
+              <option value="학업·시험 스트레스">학업·시험 스트레스 (성적 압박, 집중력 저하)</option>
+              <option value="인간관계 및 갈등">대인관계 및 소통 갈등 (가족, 친구, 동료)</option>
+              <option value="무기력 및 번아웃">만성 무기력, 번아웃, 우울감</option>
+              <option value="불안 및 감정 기복">갑작스러운 불안, 과호흡, 수면 장애</option>
+            </select>
+          </div>
+
+          <div class="pt-2">
+            <button
+              type="submit"
+              class="w-full py-3.5 bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold rounded-xl transition shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2 cursor-pointer text-sm"
+            >
+              <span>선착순 얼리버드 예약 완료하기</span>
+            </button>
+          </div>
+
+          <div class="flex items-center justify-center gap-2 text-[10px] text-slate-400 pt-2">
+            <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>개인정보 및 고민 내용은 100% 비밀 보장됩니다.</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Confirmation View -->
+      <div id="booking-success-view" class="hidden text-center py-6 space-y-4">
+        <div class="w-14 h-14 mx-auto rounded-full bg-teal-500/20 border border-teal-400 flex items-center justify-center text-teal-400">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-white">사전 예약이 접수되었습니다!</h3>
+        <p class="text-xs text-slate-300 leading-relaxed max-w-sm mx-auto">
+          마인드 트래킹 코칭 얼리버드 50% 혜택 대상자로 등록되었습니다. 전담 정신건강간호사 김현주 코치가 연락처로 24시간 이내 직접 안내를 전해드립니다.
+        </p>
+
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-left text-xs space-y-2 max-w-sm mx-auto">
+          <div class="flex justify-between">
+            <span class="text-slate-400">예약 번호</span>
+            <span id="confirm-code" class="text-teal-400 font-mono font-bold">MTC-2026-7842</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">신청자</span>
+            <span id="confirm-name" class="text-white font-medium">신청자명</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">신청 대상</span>
+            <span id="confirm-age" class="text-white font-medium">취업준비생</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">주요 고민</span>
+            <span id="confirm-concern" class="text-teal-300 font-medium">취업·진로 불안</span>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <button onclick="closeReservationModal()" class="w-full py-3 bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold rounded-xl transition text-xs cursor-pointer">
+            확인 및 닫기
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MODAL 2: COACH DETAIL MODAL -->
+  <!-- ============================================================ -->
+  <div id="coach-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+    <div class="relative w-full max-w-2xl bg-[#0F1B33] border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-100 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeCoachModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-full hover:bg-slate-800 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-teal-500/20 border border-teal-400/40 flex items-center justify-center text-teal-400">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z"/></svg>
+        </div>
+        <div>
+          <div class="text-xs font-mono text-teal-400">EXPERT PROFILE</div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">
+            정신건강간호사 2급 김현주 코치
+          </h3>
+        </div>
+      </div>
+
+      <div class="space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="font-bold text-white text-sm mb-1">
+            "병리적 꼬리표가 아닌, 일상의 호흡 속에서 회복의 힘을 찾습니다."
+          </div>
+          <p class="text-slate-400 text-xs">
+            학업과 취업의 막막함 속에서 누구나 마음의 방전과 감정의 굴곡을 겪습니다. 병원에 가기에는 망설여지고, 혼자 참기에는 버거운 청년들에게 안전하고 전문적인 멘탈 케어 가이드가 되어드리겠습니다.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">전문 자격 및 공인 이력</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <span class="text-teal-400 font-bold block mb-0.5">보건복지부 공인</span>
+              <span>정신건강간호사 2급 전문 자격 취득</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <span class="text-teal-400 font-bold block mb-0.5">임상 경력</span>
+              <span>정신건강의학과 병동 및 외래 임상 케어 다년 수행</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <span class="text-teal-400 font-bold block mb-0.5">갈등 조정 코칭</span>
+              <span>청년 정서 조율 및 대인관계 갈등 조정 전문 수료</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <span class="text-teal-400 font-bold block mb-0.5">지역사회 연계</span>
+              <span>대전 신규 아파트 커뮤니티 &amp; 정신상담센터 협업</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">김현주 코치의 3대 코칭 철학</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <div><strong class="text-white">데이터 기반의 감정 객관화:</strong> 막연한 불안을 구체적인 감정 지표와 트리거로 구조화하여 통제감을 되찾아줍니다.</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <div><strong class="text-white">판단 없는 절대적 비밀 보장:</strong> 모든 기록과 대화는 철저한 임상 윤리 강령에 따라 안전하게 보호됩니다.</div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 font-bold">✓</span>
+              <div><strong class="text-white">온·오프라인의 따뜻한 온기 결합:</strong> 편리한 디지털 앱과 일상 거점(대전 아파트 커뮤니티/상담소)의 대면 케어로 외로움을 덜어냅니다.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-xs text-slate-400">
+          대전 거점 대면 상담 및 전국 온라인 비대면 케어
+        </div>
+        <button
+          onclick="closeCoachModal(); openReservationModal();"
+          class="w-full sm:w-auto px-6 py-2.5 bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold text-xs rounded-xl transition shadow-md cursor-pointer"
+        >
+          김현주 코치에게 상담 신청하기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MODAL 3: LEGAL MODAL (Privacy & Terms) -->
+  <!-- ============================================================ -->
+  <div id="legal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="relative w-full max-w-lg bg-[#0F1B33] border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-100 max-h-[85vh] overflow-y-auto">
+      <button onclick="closeLegalModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-full hover:bg-slate-800 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="flex items-center gap-2 text-xs font-mono text-teal-400 font-bold mb-2">
+        <span id="legal-tag">PRIVACY POLICY</span>
+      </div>
+
+      <h3 id="legal-title" class="text-xl font-bold text-white mb-4">개인정보처리방침</h3>
+
+      <div id="legal-content" class="space-y-4 text-xs text-slate-300 leading-relaxed">
+        <!-- Injected via JS -->
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-800 text-right">
+        <button onclick="closeLegalModal()" class="px-5 py-2 rounded-xl bg-teal-400 text-slate-950 font-bold text-xs hover:bg-teal-300 transition cursor-pointer">
+          확인
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- JAVASCRIPT: INTERACTION & LOGIC -->
+  <!-- ============================================================ -->
+  <script>
+    // 1. Sticky Nav blur behavior
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('bg-[#0B1324]/90', 'backdrop-blur-md', 'border-b', 'border-slate-800/80', 'py-3', 'shadow-lg');
+        header.classList.remove('bg-gradient-to-b', 'py-5');
+      } else {
+        header.classList.remove('bg-[#0B1324]/90', 'backdrop-blur-md', 'border-b', 'border-slate-800/80', 'py-3', 'shadow-lg');
+        header.classList.add('bg-gradient-to-b', 'py-5');
+      }
+    });
+
+    // 2. Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamburger = document.getElementById('hamburger-icon');
+      const close = document.getElementById('close-icon');
+      const isOpen = !menu.classList.contains('hidden');
+
+      if (isOpen) {
+        menu.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+        close.classList.add('hidden');
+      } else {
+        menu.classList.remove('hidden');
+        hamburger.classList.add('hidden');
+        close.classList.remove('hidden');
+      }
+    }
+
+    // 3. Modals logic
+    function openReservationModal() {
+      document.getElementById('reservation-modal').classList.remove('hidden');
+      document.getElementById('booking-form-view').classList.remove('hidden');
+      document.getElementById('booking-success-view').classList.add('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeReservationModal() {
+      document.getElementById('reservation-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function openCoachModal() {
+      document.getElementById('coach-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCoachModal() {
+      document.getElementById('coach-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function openLegalModal(type) {
+      const modal = document.getElementById('legal-modal');
+      const tag = document.getElementById('legal-tag');
+      const title = document.getElementById('legal-title');
+      const content = document.getElementById('legal-content');
+
+      if (type === 'privacy') {
+        tag.textContent = 'PRIVACY POLICY';
+        title.textContent = '개인정보처리방침';
+        content.innerHTML = `
+          <p><strong>1. 수집하는 개인정보 항목:</strong> 마인드 트래킹 코치는 사전 예약 및 맞춤형 코칭 제공을 위해 성함(또는 닉네임), 연락처(휴대폰 번호/이메일), 연령대, 관심 고민 분야를 수집합니다.</p>
+          <p><strong>2. 개인정보 수집 및 이용 목적:</strong> 베타 테스터 자격 확인, 주간 감정 리포트 발송, 1:1 상담 일정 조율, 대전 거점 커뮤니티 예약 안내에 한하여 이용됩니다.</p>
+          <p><strong>3. 보유 및 이용 기간:</strong> 수집된 개인정보는 서비스 이용 기간 동안 안전하게 보관되며, 회원의 요청 시 지체 없이 파기됩니다.</p>
+          <p><strong>4. 비밀 보장의 의무:</strong> 정신건강간호사 윤리 강령에 따라 상담 및 감정 로깅 내역은 법령이 정한 특수한 예외를 제외하고 제3자에게 절대 제공되지 않습니다.</p>
+        `;
+      } else {
+        tag.textContent = 'TERMS OF SERVICE';
+        title.textContent = '서비스 이용약관';
+        content.innerHTML = `
+          <p><strong>제1조 (목적):</strong> 본 약관은 '마인드 트래킹 코치'가 제공하는 온·오프라인 멘탈 케어 코칭 및 감정 리포트 서비스의 이용조건 및 절차에 관한 기본 사항을 규정합니다.</p>
+          <p><strong>제2조 (서비스의 본질):</strong> 본 코칭 서비스는 정신건강간호사가 제공하는 예방적 정서 지지 및 감정 분석 가이드 프로그램이며, 의료법상 병원 진료나 의사의 전문적인 약물 처방을 직접 대체하는 의료 행위가 아닙니다. 위급한 응급 상황의 경우 전문 의료기관이나 응급 핫라인(1577-0199) 이용을 권고합니다.</p>
+          <p><strong>제3조 (구독 및 해지):</strong> 얼리버드 베타 테스터는 위약금 없이 매월 결제일 전 언제든 구독을 자유롭게 해지할 수 있습니다.</p>
+        `;
+      }
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLegalModal() {
+      document.getElementById('legal-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Reservation Form Submit Handler
+    function handleReservationSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('res-name').value;
+      const age = document.getElementById('res-age').value;
+      const concern = document.getElementById('res-concern').value;
+
+      const randomCode = 'MTC-2026-' + Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('confirm-code').textContent = randomCode;
+      document.getElementById('confirm-name').textContent = name;
+      document.getElementById('confirm-age').textContent = age;
+      document.getElementById('confirm-concern').textContent = concern;
+
+      document.getElementById('booking-form-view').classList.add('hidden');
+      document.getElementById('booking-success-view').classList.remove('hidden');
+    }
+
+    // 4. Process Stepper Details Data
+    const processData = [
+      {
+        num: '01',
+        tag: 'Digital Mind Logging',
+        title: '스마트한 일상 감정 기록 상세 프로세스',
+        desc: '학업, 취업 준비, 대인관계 등 매일 마주하는 감정의 기복을 부담 없이 1분 만에 체크인합니다. 직관적인 감정 태깅과 음성/텍스트 메모를 통해 솔직한 마음 상태를 축적합니다.',
+        features: ['1일 1회 간편 감정 체크인', '실시간 스트레스 지수 시각화', '기분 요인(트리거) 자동 분류']
+      },
+      {
+        num: '02',
+        tag: 'Clinical Pattern Analysis',
+        title: '임상 기반 감정 패턴 분석 상세 프로세스',
+        desc: '단순한 기분 기록에 그치지 않고, 반복되는 불안 루프와 스트레스 유발점을 정신건강간호사의 임상 지표로 분석하여 객관적인 감정 지도로 구조화합니다.',
+        features: ['정신건강 임상 척도 매핑', '반복되는 감정 유발 상황 탐색', '인지 왜곡 및 갈등 요인 도출']
+      },
+      {
+        num: '03',
+        tag: 'Private 1:1 Feedback',
+        title: '프라이빗 1:1 피드백 리포트 상세 프로세스',
+        desc: '한 주간의 감정 추이를 요약한 개인 맞춤형 리포트와 함께, 간호사 코치가 직접 작성한 따뜻하고 전문적인 마음 처방과 실천 가이드를 전송합니다.',
+        features: ['주간 감정 리포트 (PDF & 웹)', '1:1 비대면 코칭 피드백', '청년 맞춤 스트레스 완화 미션']
+      },
+      {
+        num: '04',
+        tag: 'Offline Deep Care',
+        title: '거점 커뮤니티 대면 심층 케어 상세 프로세스',
+        desc: '대전 신규 아파트 커뮤니티 및 지역 상담센터 거점에서 진행되는 오프라인 심층 대면 세션으로, 라포를 형성하고 갈등 조정 및 현실적인 회복 플랜을 함께 수립합니다.',
+        features: ['월 1회 대면 심층 심리 지지', '대전 신규 아파트·상담센터 거점', '안전하고 프라이빗한 상담 환경']
+      }
+    ];
+
+    function setProcessStep(idx) {
+      // Update dots & cards styling
+      for (let i = 0; i < 4; i++) {
+        const card = document.getElementById('step-card-' + i);
+        const dot = document.getElementById('dot-' + i);
+
+        if (i === idx) {
+          card.className = "p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-100 text-slate-900 border-white shadow-2xl scale-[1.02] ring-2 ring-teal-400/40";
+          if (dot) {
+            dot.querySelector('div').className = "w-6 h-6 rounded-full flex items-center justify-center border-2 bg-teal-400 border-white shadow-lg shadow-teal-500/50 scale-125 transition-all";
+            dot.querySelector('span:last-child').className = "text-xs font-mono font-semibold text-teal-300";
+          }
+        } else {
+          card.className = "p-6 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between min-h-[260px] border bg-slate-900/60 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90";
+          if (dot) {
+            dot.querySelector('div').className = "w-6 h-6 rounded-full flex items-center justify-center border-2 bg-slate-900 border-slate-600 group-hover:border-teal-400 transition-all";
+            dot.querySelector('span:last-child').className = "text-xs font-mono font-semibold text-slate-500 group-hover:text-slate-300";
+          }
+        }
+      }
+
+      // Update detail card content
+      const cur = processData[idx];
+      document.getElementById('detail-tag').innerHTML = `<span>STEP ${cur.num}</span><span>·</span><span>${cur.tag}</span>`;
+      document.getElementById('detail-title').textContent = cur.title;
+      document.getElementById('detail-desc').textContent = cur.desc;
+      document.getElementById('detail-features').innerHTML = cur.features.map(f => `
+        <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200">
+          <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>${f}</span>
+        </div>
+      `).join('');
+    }
+
+    // 5. Benefit Switcher Data
+    const benefitData = [
+      {
+        kicker: 'BENEFIT 01 · SMART LOGGING',
+        title: '스마트한 감정 기록',
+        subhead: 'AI 챗봇과 앱을 통한 일상 스트레스 데이터화',
+        desc: '멘탈 케어 전용 앱과 직관적인 챗봇을 활용하여 일상 속 스트레스 지수와 감정 데이터를 손쉽게 수집하고 시각화합니다. 머릿속에 엉켜있던 모호한 불안을 명확한 데이터로 마주할 수 있습니다.',
+        highlights: [
+          '복잡한 글쓰기 없이 터치 3번으로 끝나는 감정 로깅',
+          '시험·과제·취업 시즌별 스트레스 스파이크 실시간 알림',
+          '나만의 심리 안정 트리거 및 수면/식사 상관관계 도출'
+        ]
+      },
+      {
+        kicker: 'BENEFIT 02 · 1:1 PRIVATE FEEDBACK',
+        title: '프라이빗 1:1 피드백',
+        subhead: '매주 나만의 주간 감정 리포트와 맞춤 처방',
+        desc: '온라인으로 매주 발행되는 나만의 감정 리포트를 받고, 정신건강간호사 김현주 코치의 따뜻한 맞춤형 솔루션을 경험하세요. 혼자 견디던 부담을 전문가와 나누며 건강한 사고 루틴을 회복합니다.',
+        highlights: [
+          '매주 일요일 저녁 전달되는 개인화 위클리 마인드 리포트',
+          '간호사 코치가 직접 작성하는 1:1 감정 조율 코멘트',
+          '불안·자기비하 완화를 위한 즉각적인 인지 행동 팁 제공'
+        ]
+      },
+      {
+        kicker: 'BENEFIT 03 · OFFLINE COMMUNITY CARE',
+        title: '오프라인 심층 케어',
+        subhead: '대전 지역 거점 커뮤니티 월 1회 대면 심리 지지',
+        desc: '정기 구독 시 월 1회, 대전 내 신규 아파트 커뮤니티 및 지역 상담센터 거점에서 대면하여 더 깊고 따뜻한 심리적 지지를 제공받습니다. 온라인의 편리함과 오프라인의 온기를 결합했습니다.',
+        highlights: [
+          '집 근처 익숙하고 쾌적한 거점 커뮤니티 공간 활용',
+          '시선의 부담 없는 프라이빗 1:1 대면 케어 룸 운영',
+          '지역 청년센터 및 지원 프로그램 연계 지원'
+        ]
+      }
+    ];
+
+    function setBenefitTab(idx) {
+      for (let i = 0; i < 3; i++) {
+        const tab = document.getElementById('btab-' + i);
+        if (i === idx) {
+          tab.className = "px-4 py-2 text-xs font-bold rounded-lg transition-all bg-teal-400 text-slate-950 shadow-md";
+        } else {
+          tab.className = "px-4 py-2 text-xs font-bold rounded-lg transition-all text-slate-400 hover:text-white hover:bg-slate-800/60";
+        }
+      }
+
+      const cur = benefitData[idx];
+      document.getElementById('b-kicker').textContent = cur.kicker;
+      document.getElementById('b-title').textContent = cur.title;
+      document.getElementById('b-subhead').textContent = cur.subhead;
+      document.getElementById('b-desc').textContent = cur.desc;
+      document.getElementById('b-highlights').innerHTML = cur.highlights.map(h => `
+        <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+          <svg class="w-4 h-4 text-teal-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>${h}</span>
+        </div>
+      `).join('');
+    }
+
+    // Keyboard ESC to close any modal
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeReservationModal();
+        closeCoachModal();
+        closeLegalModal();
+      }
+    });
+  </script>
+</body>
+</html>
